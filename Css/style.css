@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #ffeef8; /* light pink background */
+  color: #5a3c57; /* soft plum color */
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ff80ab, #f48fb1); /* pink gradient */
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #f06292;
+}
+
+/* Home Section */
+#home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff0f6;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  border: 2px solid #f8bbd0;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #ffe0ef;
+}
+
+/* Modals */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(255, 192, 203, 0.6); /* soft pink overlay */
+}
+
+.modal-content {
+  background: #fffafd;
+  margin: 8% auto;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.25);
+  border: 2px solid #f8bbd0;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 1.8rem;
+  color: #d81b60;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #ad1457;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .modal-content {
+    margin-top: 25%;
+    padding: 1.5rem;
+  }
+}

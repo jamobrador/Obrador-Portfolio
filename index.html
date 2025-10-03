@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> My Portfolio</title>
+<link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1> My  Portfolio</h1>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Home</h2>
+    <div class="cards">
+      <div class="card" data-modal="profileModal">My Profile</div>
+      <div class="card" data-modal="hobbiesModal">My Hobbies</div>
+      <div class="card" data-modal="activitiesModal">My Activities</div>
+      <div class="card" data-modal="contactModal">My Contact</div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3> My Profile</h3>
+      <img src="./Image/profile.jpeg" alt="profile" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto;">
+      <div class="info">
+        <p><strong>Name:</strong> Jeslie Anne Michelle I. Obrador</p>
+        <p><strong>Age:</strong> 20</p>
+        <p><strong>Birthday:</strong> June 29, 2005</p>
+        <p><strong>Address:</strong> Barangay Payompon, Mamburao Occidental Mindoro</p>
+        <p><strong>Birthplace:</strong> Mamburao</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="hobbiesModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>My Hobbies</h3>
+      <li>Playing Mobile Legends</li>
+
+    </div>
+  </div>
+
+<div id="activitiesModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Activities</h3>
+    <li> Assessment 2 (Laboratory - by Group) </li>
+    <li> Assessment OS Installation (Individual)</li>
+    <img src="./Image/os.png" alt="Act1" 
+         style="width: 200px; height: auto; object-fit: contain; display: block; margin: 10px auto;">
+    <li> Lesson 2 Assessment 1 (Individual)</li>
+    <img src="./Image/lesson2.png" alt="Act2" 
+         style="width: 200px; height: auto; object-fit: contain; display: block; margin: 10px auto;">
+    <li> Midterm Project </li>
+  </div>
+</div>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>My Contacts</h3>
+      <p><strong>Email:</strong> jelieannemichelleobrador5@gmail.com</p>
+      <p><strong>Phone:</strong> 09551564066</p>
+      <p><strong>Facebook:</strong> Mercedes </p>
+
+      <p><strong>GitHub:</strong> 
+        <a href="https://github.com/jamobrador/Obrador-Portfolio" target="_blank" class="github-link">
+          CLICK HERE!
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <script src="./Js/script.js"></script>
+</body>
+</html>
